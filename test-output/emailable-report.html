@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">41,550</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">TestCases.TestngTestRunner</td><td><a href="#m0">run_cukes</a></td><td rowspan="1">1517663944657</td><td rowspan="1">34955</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">TestCases.TestngTestRunner#run_cukes</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><div "featureFile">Feature File: onboard.feature</div><br/><div "feature">Feature: To complete the flow of onboarding</div><br/><div "scenario">Scenario: Step by Step Execution of onboard Flow</div><br/><div "result">Given  I am navigating to site (passed : 7s)</div><br/><div "result">And  Select a Location &quot;Bengaluru&quot; (passed : 0s)</div><br/><div "result">And  Select a Product &quot;Most Popular&quot; &quot;Aashirvaad Shudh Chakki Whole Wheat Atta&quot; (passed : 8s)</div><br/><div "result">And  Login into Groffers with username &quot;9205789599&quot; and password &quot;4,1,7,2&quot; (passed : 11s)</div><br/><div "result">And  Proceed to Checkout witn number of items &quot;2&quot; and bill &quot;632&quot; (failed : 0s)</div><br/><div "scenario">Scenario: Step by Step Execution of onboard Flow with selecting multiple items</div><br/><div "result">Given  I am navigating to site (passed : 4s)</div><br/><div "result">And  Select a Location &quot;Bengaluru&quot; (failed : 0s)</div><br/><div "result">And  Select a Product &quot;Most Popular&quot; &quot;Aashirvaad Shudh Chakki Whole Wheat Atta&quot; (skipped)</div><br/><div "result">And  Select a Product &quot;Most Popular&quot; &quot;Kellogg&#x27;s Original &amp; the Best Corn Flakes (Pouch)&quot; (skipped)</div><br/><div "result">And  Login into Groffers with username &quot;9205789599&quot; and password &quot;4,1,7,2&quot; (skipped)</div><br/><div "result">And  Proceed to Checkout witn number of items &quot;2&quot; and bill &quot;632&quot; (skipped)</div></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">cucumber.runtime.CucumberException: java.lang.AssertionError: expected [2] but found [1]
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:58)
+	at TestCases.TestngTestRunner.run_cukes(TestngTestRunner.java:31)
+Caused by: java.lang.AssertionError: expected [2] but found [1]
+	at BusinessComponent.onboard.assertCart(onboard.java:68)
+	at TestCases.StepDefinition.checkout(StepDefinition.java:38)
+	at ✽.And Proceed to Checkout witn number of items &quot;2&quot; and bill &quot;632&quot;(onboard.feature:9)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
