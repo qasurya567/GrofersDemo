@@ -5,57 +5,36 @@
       <![CDATA[<div "featureFile">Feature File: onboard.feature</div>]]>
     </line>
     <line>
-      <![CDATA[<div "feature">Feature: To complete the flow of onboarding</div>]]>
+      <![CDATA[<div "feature">Feature: User Onboarding flow</div>]]>
     </line>
     <line>
       <![CDATA[<div "scenario">Scenario: Step by Step Execution of onboard Flow</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">Given  I am navigating to site (passed : 7s)</div>]]>
+      <![CDATA[<div "result">Given  I am navigating to grofers site (passed : 0s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">And  Select a Location &quot;Bengaluru&quot; (passed : 0s)</div>]]>
+      <![CDATA[<div "result">And  Select a Location &quot;Kanpur&quot; (passed : 2s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">And  Select a Product &quot;Most Popular&quot; &quot;Aashirvaad Shudh Chakki Whole Wheat Atta&quot; (passed : 8s)</div>]]>
+      <![CDATA[<div "result">And  Select a Product &quot;Most Popular&quot; &quot;Aashirvaad Shudh Chakki Whole Wheat Atta&quot; (passed : 12s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">And  Login into Groffers with username &quot;9205789599&quot; and password &quot;4,1,7,2&quot; (passed : 11s)</div>]]>
+      <![CDATA[<div "result">And  Login into Groffers with username &quot;9205789599&quot; and password &quot;4,1,7,2&quot; (failed : 9s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">And  Proceed to Checkout witn number of items &quot;2&quot; and bill &quot;632&quot; (failed : 0s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "scenario">Scenario: Step by Step Execution of onboard Flow with selecting multiple items</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">Given  I am navigating to site (passed : 4s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">And  Select a Location &quot;Bengaluru&quot; (failed : 0s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">And  Select a Product &quot;Most Popular&quot; &quot;Aashirvaad Shudh Chakki Whole Wheat Atta&quot; (skipped)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">And  Select a Product &quot;Most Popular&quot; &quot;Kellogg&#x27;s Original &amp; the Best Corn Flakes (Pouch)&quot; (skipped)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">And  Login into Groffers with username &quot;9205789599&quot; and password &quot;4,1,7,2&quot; (skipped)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">And  Proceed to Checkout witn number of items &quot;2&quot; and bill &quot;632&quot; (skipped)</div>]]>
+      <![CDATA[<div "result">And  Proceed to Checkout witn number of items &quot;1&quot; and bill &quot;632&quot; (skipped)</div>]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="41550" started-at="2018-02-03T13:18:58Z" finished-at="2018-02-03T13:19:39Z">
+  <suite name="Suite" duration-ms="50521" started-at="2018-02-05T16:19:30Z" finished-at="2018-02-05T16:20:21Z">
     <groups>
       <group name="cucumber">
-        <method signature="TestngTestRunner.run_cukes()[pri:0, instance:TestCases.TestngTestRunner@757942a1]" name="run_cukes" class="TestCases.TestngTestRunner"/>
+        <method signature="TestngTestRunner.run_cukes()[pri:0, instance:StepDefinations.TestngTestRunner@66d1af89]" name="run_cukes" class="StepDefinations.TestngTestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="41550" started-at="2018-02-03T13:18:58Z" finished-at="2018-02-03T13:19:39Z">
-      <class name="TestCases.TestngTestRunner">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:TestCases.TestngTestRunner@757942a1]" name="beforeMethod" is-config="true" duration-ms="6539" started-at="2018-02-03T18:48:58Z" finished-at="2018-02-03T18:49:04Z">
+    <test name="Test" duration-ms="50521" started-at="2018-02-05T16:19:30Z" finished-at="2018-02-05T16:20:21Z">
+      <class name="StepDefinations.TestngTestRunner">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:StepDefinations.TestngTestRunner@66d1af89]" name="beforeMethod" is-config="true" duration-ms="19939" started-at="2018-02-05T21:49:30Z" finished-at="2018-02-05T21:49:50Z">
           <params>
             <param index="0">
               <value>
@@ -71,13 +50,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="run_cukes()[pri:0, instance:TestCases.TestngTestRunner@757942a1]" name="run_cukes" duration-ms="34955" started-at="2018-02-03T18:49:04Z" description="Runs Cucumber Features" finished-at="2018-02-03T18:49:39Z">
+        <test-method status="SKIP" signature="run_cukes()[pri:0, instance:StepDefinations.TestngTestRunner@66d1af89]" name="run_cukes" duration-ms="29123" started-at="2018-02-05T21:49:50Z" description="Runs Cucumber Features" finished-at="2018-02-05T21:50:19Z">
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[java.lang.AssertionError: expected [2] but found [1]]]>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable  (Session info: chrome=63.0.3239.132)  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 4.02 secondsBuild info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'System info: host: 'DESKTOP-OKKEN75', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\gaurav\AppData\Local\Temp\scoped_dir5000_2295}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]Session ID: 63f7157f42aff65c806d086c3d10a3b2*** Element info: {Using=xpath, value=//div[contains(text(),'Login')]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: expected [2] but found [1]at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:58)at TestCases.TestngTestRunner.run_cukes(TestngTestRunner.java:31)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)Caused by: java.lang.AssertionError: expected [2] but found [1]at org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.failNotEquals(Assert.java:776)at org.testng.Assert.assertEqualsImpl(Assert.java:137)at org.testng.Assert.assertEquals(Assert.java:118)at org.testng.Assert.assertEquals(Assert.java:453)at org.testng.Assert.assertEquals(Assert.java:463)at BusinessComponent.onboard.assertCart(onboard.java:68)at TestCases.StepDefinition.checkout(StepDefinition.java:38)at ✽.And Proceed to Checkout witn number of items "2" and bill "632"(onboard.feature:9)]]>
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.WebDriverException: chrome not reachable  (Session info: chrome=63.0.3239.132)  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 4.02 secondsBuild info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'System info: host: 'DESKTOP-OKKEN75', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\gaurav\AppData\Local\Temp\scoped_dir5000_2295}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]Session ID: 63f7157f42aff65c806d086c3d10a3b2*** Element info: {Using=xpath, value=//div[contains(text(),'Login')]}at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:58)at StepDefinations.TestngTestRunner.run_cukes(TestngTestRunner.java:48)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)Caused by: org.openqa.selenium.WebDriverException: chrome not reachable  (Session info: chrome=63.0.3239.132)  (Driver info: chromedriver=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 4.02 secondsBuild info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'System info: host: 'DESKTOP-OKKEN75', ip: '192.168.0.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'Driver info: org.openqa.selenium.chrome.ChromeDriverCapabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f), userDataDir=C:\Users\gaurav\AppData\Local\Temp\scoped_dir5000_2295}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]Session ID: 63f7157f42aff65c806d086c3d10a3b2*** Element info: {Using=xpath, value=//div[contains(text(),'Login')]}at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)at java.lang.reflect.Constructor.newInstance(Constructor.java:423)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)at org.openqa.selenium.By$ByXPath.findElement(By.java:361)at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)at com.sun.proxy.$Proxy16.click(Unknown Source)at BusinessComponent.onboard.login(onboard.java:88)at StepDefinations.OnboardinFlow.login(OnboardinFlow.java:69)at ✽.And Login into Groffers with username "9205789599" and password "4,1,7,2"(onboard.feature:9)]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
@@ -85,54 +64,33 @@
               <![CDATA[<div "featureFile">Feature File: onboard.feature</div>]]>
             </line>
             <line>
-              <![CDATA[<div "feature">Feature: To complete the flow of onboarding</div>]]>
+              <![CDATA[<div "feature">Feature: User Onboarding flow</div>]]>
             </line>
             <line>
               <![CDATA[<div "scenario">Scenario: Step by Step Execution of onboard Flow</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">Given  I am navigating to site (passed : 7s)</div>]]>
+              <![CDATA[<div "result">Given  I am navigating to grofers site (passed : 0s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">And  Select a Location &quot;Bengaluru&quot; (passed : 0s)</div>]]>
+              <![CDATA[<div "result">And  Select a Location &quot;Kanpur&quot; (passed : 2s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">And  Select a Product &quot;Most Popular&quot; &quot;Aashirvaad Shudh Chakki Whole Wheat Atta&quot; (passed : 8s)</div>]]>
+              <![CDATA[<div "result">And  Select a Product &quot;Most Popular&quot; &quot;Aashirvaad Shudh Chakki Whole Wheat Atta&quot; (passed : 12s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">And  Login into Groffers with username &quot;9205789599&quot; and password &quot;4,1,7,2&quot; (passed : 11s)</div>]]>
+              <![CDATA[<div "result">And  Login into Groffers with username &quot;9205789599&quot; and password &quot;4,1,7,2&quot; (failed : 9s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">And  Proceed to Checkout witn number of items &quot;2&quot; and bill &quot;632&quot; (failed : 0s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "scenario">Scenario: Step by Step Execution of onboard Flow with selecting multiple items</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">Given  I am navigating to site (passed : 4s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">And  Select a Location &quot;Bengaluru&quot; (failed : 0s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">And  Select a Product &quot;Most Popular&quot; &quot;Aashirvaad Shudh Chakki Whole Wheat Atta&quot; (skipped)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">And  Select a Product &quot;Most Popular&quot; &quot;Kellogg&#x27;s Original &amp; the Best Corn Flakes (Pouch)&quot; (skipped)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">And  Login into Groffers with username &quot;9205789599&quot; and password &quot;4,1,7,2&quot; (skipped)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">And  Proceed to Checkout witn number of items &quot;2&quot; and bill &quot;632&quot; (skipped)</div>]]>
+              <![CDATA[<div "result">And  Proceed to Checkout witn number of items &quot;1&quot; and bill &quot;632&quot; (skipped)</div>]]>
             </line>
           </reporter-output>
         </test-method> <!-- run_cukes -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:TestCases.TestngTestRunner@757942a1]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-02-03T18:49:39Z" finished-at="2018-02-03T18:49:39Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:StepDefinations.TestngTestRunner@66d1af89]" name="afterMethod" is-config="true" duration-ms="1400" started-at="2018-02-05T21:50:19Z" finished-at="2018-02-05T21:50:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- TestCases.TestngTestRunner -->
+      </class> <!-- StepDefinations.TestngTestRunner -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

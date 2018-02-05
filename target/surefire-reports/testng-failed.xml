@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <parameter name="tsName" value="Onboarding"/>
+  <parameter name="URL" value="https://www.grofers.com"/>
+  <parameter name="browserType" value="chrome"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="StepDefinations.TestngTestRunner">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="run_cukes"/>
+        </methods>
+      </class> <!-- StepDefinations.TestngTestRunner -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

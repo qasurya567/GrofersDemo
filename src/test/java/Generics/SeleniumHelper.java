@@ -1,9 +1,18 @@
-package Utilities;
+package Generics;
 
+import java.io.File;
+
+import java.util.Calendar;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,9 +23,15 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class SeleniumHelper extends Constant{
-
+	
+	
+	public static String FILE_NAME; 
+	public static String PATH ;
+	public static Logger APP_LOGS;
+	
 	public static void OpenBrowser(String browserType){
 		System.out.println("Opening: " + browserType + " Browser");
 		try{
@@ -41,7 +56,6 @@ public class SeleniumHelper extends Constant{
 			System.out.println(exp.getMessage());
 		}
 	}
-	
 	public static void GetURL(String URL){
 		System.out.println("Navigating to (" + URL + ") Site");
 		try{
@@ -63,13 +77,22 @@ public class SeleniumHelper extends Constant{
 		}
 	}
 	
-	public static void CloseRecentBrowser(){
+	public static void CloseBrowser(){
 		System.out.println("Closing the recent tabs");
 		try{
 			driver.close();
 		}catch(Exception exp){
 			System.out.println(exp.getMessage());
 		}
+	}
+	
+	public static  void clearcookies() {
+	System.out.println("clearing all cookies");
+	try {
+		driver.manage().deleteAllCookies();
+	}catch(Exception exp) {
+	System.out.println(exp.getMessage());
+	}
 	}
 	
 	public static void WaitImplicitlyForPageToLoad(){
@@ -131,7 +154,7 @@ public class SeleniumHelper extends Constant{
 	public static boolean CheckElementVisibility(WebElement element){
 		boolean val=false;
 		try{
-			WaitImplicitlyForPageToLoad();
+			ExplicitlyWaitForElement(element);
 			val=element.isDisplayed();
 		}catch(Exception exp){
 			System.out.println(exp.getMessage());
@@ -173,4 +196,37 @@ public class SeleniumHelper extends Constant{
 			System.out.println(exp.getMessage());
 		}
 	}
+	public static void getScreenShot(String Method_name) {
+		try {
+		File scrFile = ((TakesScreenshot)Constant.driver).getScreenshotAs(OutputType.FILE);
+		String path=Constant.RootPath+"/ScreenShot/"+Method_name+"_"+Utils.getMinSec()+".png";
+		FileUtils.copyFile(scrFile, new File(path));
+		}catch(Exception exp) {
+			exp.getMessage();
+		}
+		
+		
+	}
+	
+
+	public static void assertOnPageopen(String expectedTitle) {
+		String pageTitle = SeleniumHelper.getTitleOfPage();
+		Assert.assertEquals(pageTitle, expectedTitle);
+	}
+	public static void VerifyElementDisplayed(WebElement element) {
+		boolean isDispalyedmessage =element.isDisplayed();
+		Assert.assertTrue(isDispalyedmessage);
+	}
+	
+	public static void assertOnisEnabled(WebElement element) {
+		boolean isEnabledmedmessage =element.isDisplayed();
+		Assert.assertTrue(isEnabledmedmessage);
+	}
+	
+		
 }
+
+
+
+	
+	

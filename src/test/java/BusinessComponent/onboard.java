@@ -1,15 +1,14 @@
 package BusinessComponent;
 
 import java.util.List;
-
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+
+import Generics.Constant;
+import Generics.SeleniumHelper;
 import PageFactory.onboardPOF;
-import Utilities.Constant;
-import Utilities.SeleniumHelper;
 
 public class onboard {
 
@@ -34,23 +33,45 @@ public class onboard {
 		}
 	}
 
-	public void giveLocation(String Location) {
-		Assert.assertEquals(elements.input_locationSelect.isDisplayed(), true);
-		SeleniumHelper.ExplicitlyWaitForElement(elements.input_locationSelect);
-		elements.input_locationSelect.sendKeys(Location);
-		elements.input_locationSelect.sendKeys(Keys.ENTER);
+	public void giveLocation(String Location) throws InterruptedException {
+		SeleniumHelper.VerifyElementDisplayed(elements.LocationBody);
+		
+		SeleniumHelper.VerifyElementDisplayed(elements.defaultSelectedDeliveryLocationtab);
+		if(elements.defaultSelectedDeliveryLocationtab.getText().equalsIgnoreCase(Location)  ) {
+			SeleniumHelper.ClickOnWebelements(elements.defaultSelectedDeliveryLocationtab);
+			
+			
+			
+		} else  {
+		
+		List<WebElement>topCitiesList=elements.topSearcheCitiesList;
+		for(int j=0;j<topCitiesList.size();j++) {
+			String actualCities=topCitiesList.get(j).getText();
+			if(actualCities.equalsIgnoreCase(Location)) {
+			SeleniumHelper.ClickOnWebelements(topCitiesList.get(j));
+			}else {
+				SeleniumHelper.VerifyElementDisplayed(elements.input_locationSelect);
+				SeleniumHelper.ExplicitlyWaitForElement(elements.input_locationSelect);
+				SeleniumHelper.SendTextToElement(elements.input_locationSelect, Location);
+				SeleniumHelper.PressEnterNow(elements.input_locationSelect);
+				
+				
+			}
+			
+		 }
+			
+			
+	 }
+		
 	}
 
-	public void assertOnPageopen(String expectedTitle) {
-		String pageTitle = SeleniumHelper.getTitleOfPage();
-		Assert.assertEquals(pageTitle, expectedTitle);
-	}
-
+	
 	public void login(String userName, List<String> password) throws InterruptedException {
 		Thread.sleep(5000);
 		elements.tag_login.click();
 		elements.btn_login.click();
 		SeleniumHelper.ExplicitlyWaitForElement(elements.input_mobile);
+		Generics.Utils.checkMoileNuer(userName);
 		elements.input_mobile.sendKeys(userName);
 		elements.btn_next.click();
 		
@@ -72,7 +93,6 @@ public class onboard {
 		SeleniumHelper.ExplicitlyWaitForElement(elements.btn_cart);
 		Thread.sleep(5000);
 		elements.btn_cart.click();
-		//Assert.assertEquals(elements.amount_verify(bill_amount),true,"Bill is not matching");
 		elements.btn_checkout.click();
 	}
 }

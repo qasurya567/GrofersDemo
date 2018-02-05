@@ -70,6 +70,20 @@ public class onboardPOF {
 	@FindBy(xpath="//span[@id='react-select-2--value']//input")
 	public WebElement input_locationSelect;
 	
+	@FindBy(xpath="//div[@class='location-body']")
+	public WebElement LocationBody;
+	
+	@FindBy(xpath="//div[contains(@class,'location-body__selected-title') ]/span[@class='weight--semibold']")
+	public WebElement defaultSelectedDeliveryLocationtab;
+	
+	@FindBy(xpath="//div[@class='cities-container-list']")
+	public List <WebElement> topSearcheCitiesList;
+	
+     @FindBy(id="react-select-2--value")
+	public List <WebElement>  autoSuggestedLocationList;
+	
+	
+	
 	public onboardPOF(WebDriver driver){
 		this.driver=driver;
 	}
